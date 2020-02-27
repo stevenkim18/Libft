@@ -6,11 +6,11 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/26 16:59:10 by seunkim           #+#    #+#             */
-/*   Updated: 2020/02/26 18:26:22 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/02/26 22:06:05 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <stdlib.h>
 
 void*	ft_memset(void *b, int c, size_t len)
 {

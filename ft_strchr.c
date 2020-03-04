@@ -6,7 +6,7 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/03 04:24:26 by seunkim           #+#    #+#             */
-/*   Updated: 2020/03/03 05:11:14 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/03/05 03:20:10 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,9 @@ char	*ft_strchr(char *s, int c)
 			return (s + idx);
 		idx++;
 	}
-	return (NULL);
+	if (!(char)c)
+		return (s + idx);
+	else
+		return (NULL);
 }
 

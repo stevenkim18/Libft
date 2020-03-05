@@ -6,66 +6,75 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/05 17:31:36 by seunkim           #+#    #+#             */
-/*   Updated: 2020/03/05 19:53:31 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/03/06 00:47:11 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	size_t	ft_getstrlen(char const *s1, char const *set)
+static	int	ft_findchar(char c, char const *str)
 {
-	size_t	count;
 	size_t	idx;
-	size_t	set_idx;
-	size_t	idx_tmp;
 
-	count = 0;
 	idx = 0;
-	if (ft_strlen(set) == 0)
-		return (ft_strlen(s1));
-	while (s1[idx])
+	while (str[idx])
 	{
-		set_idx = 0;
-		if (s1[idx] == set[set_idx])
-		{	
-			set_idx++;
-			idx_tmp = idx + 1;
-			while (set[set_idx] && s1[idx_tmp++] == set[set_idx++])
-			if (set_idx == ft_strlen(set))
-				idx = idx_tmp;	
-		}
+		if (c == str[idx])
+			return (1);
 		idx++;
-		count++;
 	}
-	return (count);
+	return (0);
+}
+
+static	char	*ft_checkfront(char const *s1, char const *set)
+{
+	size_t	idx;
+
+	idx = 0;
+	if (ft_findchar(s1[idx], set))
+	{
+		idx++;
+		while (ft_findchar(s1[idx], set))
+			idx++;
+		return ((char*)s1 + idx);
+	}
+	else 
+		return ((char*)s1);
+}
+
+static	int	ft_checkend(char const *s1, char const *set)
+{
+	int	idx;
+	
+	idx = (int)ft_strlen(s1) - 1;
+	if (idx < 0)
+		return (0);
+	if (ft_findchar(s1[idx], set))
+	{
+		idx--;
+		while (ft_findchar(s1[idx], set))
+			idx--;
+	}	
+	return (idx + 1);
 }
 
 char		*ft_strtrim(char const *s1, char const *set)
 {
 	int	idx;
-	int	idx_tmp;
-	int	set_idx;
-	size_t	size;
+	int	size;
 	char	*str;
-
-	size = ft_getstrlen(s1, set);
+	
+	s1 = ft_checkfront(s1, set);
+	size = ft_checkend(s1, set);
 	if (!(str = (char*)malloc(sizeof(char) * (size + 1))))
 		return (NULL);
-	idx = -1;
-	while (s1[++idx])
-	{	
-		set_idx = 0;
-		if (s1[idx] == set[set_idx])
-		{
-			set_idx++;
-			idx_tmp = idx + 1;
-			while (set[set_idx] && s1[idx_tmp++] == set[set_idx++])
-			if (set_idx == (int)ft_strlen(set))
-				idx = idx_tmp;
-		}
-		*(str++) = s1[idx];
+	idx = 0;
+	while (idx < size)
+	{
+		str[idx] = s1[idx];
+		idx++;
 	}
-	*str = '\0';
-	return (str - size);
+	str[idx] = '\0';
+	return (str);
 }
 

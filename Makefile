@@ -6,7 +6,7 @@
 #    By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/03/05 01:12:41 by seunkim           #+#    #+#              #
-#    Updated: 2020/03/05 17:27:59 by seunkim          ###   ########.fr        #
+#    Updated: 2020/03/05 19:54:15 by seunkim          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,8 @@ SRCS	=	ft_memset.c \
 		ft_calloc.c \
 		ft_strdup.c \
 		ft_substr.c \
-		ft_strjoin.c
+		ft_strjoin.c \
+		ft_strtrim.c
 
 CC	=	gcc
 FLAGS	=	-Wall -Werror -Wextra

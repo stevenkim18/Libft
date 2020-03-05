@@ -6,7 +6,7 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 15:38:11 by seunkim           #+#    #+#             */
-/*   Updated: 2020/03/05 02:44:51 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/03/05 16:42:46 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,10 @@ int	ft_isascii(int c);
 int 	ft_isprint(int c);
 int	ft_toupper(int c);
 int	ft_tolower(int c);
+
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *s1);
+
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif

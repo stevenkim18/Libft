@@ -6,7 +6,7 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 15:38:11 by seunkim           #+#    #+#             */
-/*   Updated: 2020/03/07 04:18:20 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/03/07 15:37:58 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,5 +66,6 @@ t_list	*ft_lstlast(t_list *lst);
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void(*del)(void*));
 void	ft_lstclear(t_list **lst, void(*del)(void*));
+void	ft_lstiter(t_list *lst, void(*f)(void*));
 
 #endif

@@ -6,7 +6,7 @@
 #    By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/03/05 01:12:41 by seunkim           #+#    #+#              #
-#    Updated: 2020/03/07 04:17:50 by seunkim          ###   ########.fr        #
+#    Updated: 2020/03/07 15:38:26 by seunkim          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,7 +52,8 @@ SRCS	=	ft_memset.c \
 		ft_lstlast.c \
 		ft_lstadd_back.c \
 		ft_lstdelone.c \
-		ft_lstclear.c
+		ft_lstclear.c \
+		ft_lstiter.c
 
 CC	=	gcc
 FLAGS	=	-Wall -Werror -Wextra

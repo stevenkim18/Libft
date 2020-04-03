@@ -6,14 +6,13 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 23:26:19 by seunkim           #+#    #+#             */
-/*   Updated: 2020/02/27 23:46:55 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/04/03 17:18:19 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);
 }
-

@@ -6,7 +6,7 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/07 01:22:57 by seunkim           #+#    #+#             */
-/*   Updated: 2020/03/07 01:32:29 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/04/03 17:26:36 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(num / 10, fd);
 		ft_putnbr_fd(num % 10, fd);
 	}
-	else 
+	else
 	{
 		num += 48;
 		write(fd, &num, 1);

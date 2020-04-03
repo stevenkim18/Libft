@@ -6,14 +6,14 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/04 02:54:05 by seunkim           #+#    #+#             */
-/*   Updated: 2020/03/04 03:08:19 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/04/03 17:28:22 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 int	ft_isalpha(int c)
-{	
+{
 	unsigned char ch;
 
 	ch = (unsigned char)c;
@@ -21,4 +21,3 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
-

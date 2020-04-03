@@ -6,7 +6,7 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 21:48:46 by seunkim           #+#    #+#             */
-/*   Updated: 2020/03/02 01:29:57 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/04/03 17:31:53 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,10 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 	{
 		idx = len;
 		while (idx)
-		{	
+		{
 			idx--;
 			((unsigned char*)dest)[idx] = ((unsigned char*)src)[idx];
 		}
 	}
 	return (dest);
 }
-

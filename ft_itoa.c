@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static	int	ft_numlen(long long int num)
+static	int		ft_numlen(long long int num)
 {
 	int	count;
 
@@ -43,11 +43,11 @@ static	char	*ft_revstr(char *str)
 	return (str);
 }
 
-char		*ft_itoa(int n)
+char			*ft_itoa(int n)
 {
-	int		size;
-	int		idx;
-	char		*str;
+	int				size;
+	int				idx;
+	char			*str;
 	long long int	num;
 
 	num = (long long int)n;

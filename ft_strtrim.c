@@ -26,7 +26,7 @@ static	int		ft_findchar(char c, char const *str)
 	return (0);
 }
 
-static	char		*ft_checkfront(char const *s1, char const *set)
+static	char	*ft_checkfront(char const *s1, char const *set)
 {
 	size_t		idx;
 
@@ -62,7 +62,7 @@ char			*ft_strtrim(char const *s1, char const *set)
 {
 	int		idx;
 	int		size;
-	char		*str;
+	char	*str;
 
 	s1 = ft_checkfront(s1, set);
 	size = ft_checkend(s1, set);

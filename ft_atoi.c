@@ -12,11 +12,11 @@
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+int		ft_atoi(const char *str)
 {
 	size_t		idx;
-	int		sign;
-	int		value;
+	int			sign;
+	int			value;
 
 	idx = 0;
 	while (str[idx] &&

@@ -38,7 +38,7 @@ static	int		ft_wordcount(char const *s, char c)
 
 static char		*ft_strndup(char const *s, int n)
 {
-	int	idx;
+	int		idx;
 	char	*ptr;
 
 	idx = 0;
@@ -55,7 +55,7 @@ static char		*ft_strndup(char const *s, int n)
 
 char			**ft_split(char const *s, char c)
 {
-	int		word_idx;
+	int			word_idx;
 	char		**words;
 	char		*ptr;
 

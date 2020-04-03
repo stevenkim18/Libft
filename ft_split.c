@@ -6,17 +6,17 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 01:02:26 by seunkim           #+#    #+#             */
-/*   Updated: 2020/04/03 17:35:16 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/04/03 17:43:45 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-static	int	ft_wordcount(char const *s, char c)
+static	int		ft_wordcount(char const *s, char c)
 {
-	int	idx;
-	int	count;
+	int		idx;
+	int		count;
 
 	idx = 0;
 	while (s[idx] && s[idx] == c)
@@ -36,7 +36,7 @@ static	int	ft_wordcount(char const *s, char c)
 	return (count + 1);
 }
 
-char		*ft_strndup(char const *s, int n)
+static char		*ft_strndup(char const *s, int n)
 {
 	int	idx;
 	char	*ptr;
@@ -53,11 +53,11 @@ char		*ft_strndup(char const *s, int n)
 	return (ptr);
 }
 
-char		**ft_split(char const *s, char c)
+char			**ft_split(char const *s, char c)
 {
-	int	word_idx;
-	char	**words;
-	char	*ptr;
+	int		word_idx;
+	char		**words;
+	char		*ptr;
 
 	if (!(words = (char**)malloc(sizeof(char*) * (ft_wordcount(s, c)))))
 		return (NULL);

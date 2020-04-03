@@ -6,7 +6,7 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/03 04:53:51 by seunkim           #+#    #+#             */
-/*   Updated: 2020/04/03 17:29:57 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/04/03 17:41:05 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strrchr(char *s, int c)
 {
-	int	idx;
-	size_t	len;
+	int		idx;
+	size_t		len;
 
 	len = ft_strlen(s);
 	idx = len - 1;

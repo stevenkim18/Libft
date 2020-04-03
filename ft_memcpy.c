@@ -6,7 +6,7 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/28 01:20:58 by seunkim           #+#    #+#             */
-/*   Updated: 2020/04/03 17:27:44 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/04/03 17:40:47 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t		idx;
-	unsigned char*	dest_tmp;
-	unsigned char*	src_tmp;
+	size_t			idx;
+	unsigned char		*dest_tmp;
+	unsigned char		*src_tmp;
 
 	if (dest == NULL && src == NULL)
 		return (NULL);
@@ -30,4 +30,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-

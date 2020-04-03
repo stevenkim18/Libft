@@ -6,15 +6,15 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/05 17:31:36 by seunkim           #+#    #+#             */
-/*   Updated: 2020/04/03 17:37:07 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/04/03 17:42:27 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	int	ft_findchar(char c, char const *str)
+static	int		ft_findchar(char c, char const *str)
 {
-	size_t	idx;
+	size_t		idx;
 
 	idx = 0;
 	while (str[idx])
@@ -26,9 +26,9 @@ static	int	ft_findchar(char c, char const *str)
 	return (0);
 }
 
-static	char	*ft_checkfront(char const *s1, char const *set)
+static	char		*ft_checkfront(char const *s1, char const *set)
 {
-	size_t	idx;
+	size_t		idx;
 
 	idx = 0;
 	if (ft_findchar(s1[idx], set))
@@ -42,9 +42,9 @@ static	char	*ft_checkfront(char const *s1, char const *set)
 		return ((char*)s1);
 }
 
-static	int	ft_checkend(char const *s1, char const *set)
+static	int		ft_checkend(char const *s1, char const *set)
 {
-	int	idx;
+	int		idx;
 
 	idx = (int)ft_strlen(s1) - 1;
 	if (idx < 0)
@@ -58,11 +58,11 @@ static	int	ft_checkend(char const *s1, char const *set)
 	return (idx + 1);
 }
 
-char		*ft_strtrim(char const *s1, char const *set)
+char			*ft_strtrim(char const *s1, char const *set)
 {
-	int	idx;
-	int	size;
-	char	*str;
+	int		idx;
+	int		size;
+	char		*str;
 
 	s1 = ft_checkfront(s1, set);
 	size = ft_checkend(s1, set);

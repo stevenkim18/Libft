@@ -6,7 +6,7 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/04 02:25:25 by seunkim           #+#    #+#             */
-/*   Updated: 2020/04/03 17:36:14 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/04/03 18:32:53 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *str)
 {
-	size_t	idx;
-	int	sign;
-	int	value;
+	size_t		idx;
+	int		sign;
+	int		value;
 
 	idx = 0;
 	while (str[idx] &&

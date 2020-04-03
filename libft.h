@@ -6,7 +6,7 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 15:38:11 by seunkim           #+#    #+#             */
-/*   Updated: 2020/04/03 17:38:55 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/04/03 17:55:50 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ void	ft_putnbr_fd(int n, int fd);
 typedef	struct		s_list
 {
 	void		*content;
-	struct	s_list	*next;
+	struct s_list	*next;
 }			t_list;
 
 t_list	*ft_lstnew(void *content);

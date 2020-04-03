@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(char *s, int c)
 {
-	int		idx;
+	int			idx;
 	size_t		len;
 
 	len = ft_strlen(s);

@@ -6,7 +6,7 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/03 01:01:28 by seunkim           #+#    #+#             */
-/*   Updated: 2020/03/03 01:06:37 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/04/03 17:21:30 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,4 +21,3 @@ size_t	ft_strlen(const char *s)
 		count++;
 	return (count);
 }
-

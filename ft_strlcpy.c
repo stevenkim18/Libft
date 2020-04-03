@@ -6,7 +6,7 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/03 01:11:22 by seunkim           #+#    #+#             */
-/*   Updated: 2020/04/03 17:17:32 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/04/03 17:21:43 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize)
 	dest[idx] = '\0';
 	return (ft_strlen(src));
 }
-

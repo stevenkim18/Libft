@@ -6,7 +6,7 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/07 03:33:27 by seunkim           #+#    #+#             */
-/*   Updated: 2020/04/03 17:17:14 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/04/03 17:20:40 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,4 +19,3 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	else
 		ft_lstlast(*lst)->next = new;
 }
-

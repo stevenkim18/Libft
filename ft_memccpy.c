@@ -6,7 +6,7 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/29 02:01:12 by seunkim           #+#    #+#             */
-/*   Updated: 2020/03/02 00:14:05 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/04/03 17:22:54 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,3 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 	}
 	return (NULL);
 }
-

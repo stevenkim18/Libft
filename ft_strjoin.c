@@ -6,7 +6,7 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/05 17:03:59 by seunkim           #+#    #+#             */
-/*   Updated: 2020/03/05 17:27:34 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/04/03 17:23:09 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,4 +37,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ptr[idx] = '\0';
 	return (ptr);
 }
-

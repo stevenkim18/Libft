@@ -17,7 +17,7 @@ char	*ft_strnstr(const char *haystack, const char *neddle, size_t len)
 	size_t	idx;
 	size_t	n_idx;
 	size_t	idx_tmp;
-	
+
 	if (*neddle == '\0')
 		return ((char*)haystack);
 	idx = 0;
@@ -25,7 +25,7 @@ char	*ft_strnstr(const char *haystack, const char *neddle, size_t len)
 	{
 		n_idx = 0;
 		if (haystack[idx] == neddle[n_idx++])
-		{	
+		{
 			idx_tmp = idx + 1;
 			while (haystack[idx_tmp] == neddle[n_idx])
 			{
@@ -39,4 +39,3 @@ char	*ft_strnstr(const char *haystack, const char *neddle, size_t len)
 	}
 	return (NULL);
 }
-

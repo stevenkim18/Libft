@@ -6,7 +6,7 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/26 16:59:10 by seunkim           #+#    #+#             */
-/*   Updated: 2020/04/03 17:30:45 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/04/03 17:39:21 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	size_t		idx;
-	size_t		size;
-	unsigned char	value;
-	char		*ptr;
+	size_t			idx;
+	size_t			size;
+	unsigned char		value;
+	char			*ptr;
 
 	idx = 0;
 	value = c;

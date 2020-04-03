@@ -6,7 +6,7 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/04 02:25:25 by seunkim           #+#    #+#             */
-/*   Updated: 2020/03/04 02:51:37 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/04/03 17:36:14 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 int	ft_atoi(const char *str)
 {
 	size_t	idx;
-	int 	sign;
+	int	sign;
 	int	value;
-	
+
 	idx = 0;
-	while (str[idx] && 
+	while (str[idx] &&
 		(str[idx] == ' ' || (str[idx] >= 9 && str[idx] <= 13)))
 		idx++;
 	sign = 1;
@@ -37,4 +37,3 @@ int	ft_atoi(const char *str)
 	}
 	return (value * sign);
 }
-

@@ -6,7 +6,7 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 15:38:11 by seunkim           #+#    #+#             */
-/*   Updated: 2020/03/08 04:31:51 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/04/03 17:38:55 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	ft_isalpha(int c);
 int	ft_isdigit(int c);
 int	ft_isalnum(int c);
 int	ft_isascii(int c);
-int 	ft_isprint(int c);
+int	ft_isprint(int c);
 int	ft_toupper(int c);
 int	ft_tolower(int c);
 
@@ -55,8 +55,8 @@ void	ft_putnbr_fd(int n, int fd);
 
 typedef	struct		s_list
 {
-	void		*content; 
-	struct	s_list	*next; 
+	void		*content;
+	struct	s_list	*next;
 }			t_list;
 
 t_list	*ft_lstnew(void *content);

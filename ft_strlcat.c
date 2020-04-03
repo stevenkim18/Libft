@@ -6,14 +6,14 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/03 02:08:43 by seunkim           #+#    #+#             */
-/*   Updated: 2020/03/05 03:31:29 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/04/03 17:37:53 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 size_t	ft_strlcat(char *dest, const char *src, size_t dstsize)
-{	
+{
 	size_t	idx;
 	size_t	dest_len;
 	size_t	src_len;
@@ -31,4 +31,3 @@ size_t	ft_strlcat(char *dest, const char *src, size_t dstsize)
 		return (src_len + dstsize);
 	return (dest_len + src_len);
 }
-

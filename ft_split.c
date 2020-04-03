@@ -6,7 +6,7 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 01:02:26 by seunkim           #+#    #+#             */
-/*   Updated: 2020/03/06 02:24:24 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/04/03 17:35:16 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static	int	ft_wordcount(char const *s, char c)
 	{
 		if (s[idx] == c)
 		{
-			if(s[idx - 1] != c)
+			if (s[idx - 1] != c)
 				count++;
 		}
 		idx++;
@@ -54,7 +54,7 @@ char		*ft_strndup(char const *s, int n)
 }
 
 char		**ft_split(char const *s, char c)
-{	
+{
 	int	word_idx;
 	char	**words;
 	char	*ptr;
@@ -81,4 +81,3 @@ char		**ft_split(char const *s, char c)
 	words[word_idx] = NULL;
 	return (words);
 }
-

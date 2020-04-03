@@ -6,7 +6,7 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 18:54:40 by seunkim           #+#    #+#             */
-/*   Updated: 2020/03/06 20:50:11 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/04/03 17:33:57 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static	int	ft_numlen(long long int num)
 }
 
 static	char	*ft_revstr(char *str)
-{	
+{
 	size_t	idx;
 	size_t	len;
 	char	temp;
@@ -34,7 +34,7 @@ static	char	*ft_revstr(char *str)
 	len = ft_strlen(str);
 	idx = 0;
 	while (idx < len / 2)
-	{	
+	{
 		temp = str[idx];
 		str[idx] = str[len - idx - 1];
 		str[len - idx - 1] = temp;
@@ -49,7 +49,7 @@ char		*ft_itoa(int n)
 	int		idx;
 	char		*str;
 	long long int	num;
-	
+
 	num = (long long int)n;
 	size = ft_numlen(num);
 	if (num < 0)
@@ -71,4 +71,3 @@ char		*ft_itoa(int n)
 		str[0] = '-';
 	return (str);
 }
-

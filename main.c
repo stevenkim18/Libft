@@ -1,30 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/26 16:59:10 by seunkim           #+#    #+#             */
-/*   Updated: 2020/04/03 17:41:28 by seunkim          ###   ########.fr       */
+/*   Created: 2020/04/04 01:48:36 by seunkim           #+#    #+#             */
+/*   Updated: 2020/04/04 02:11:01 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
+#include <string.h>
 
-void	*ft_memset(void *b, int c, size_t len)
+int main(void)
 {
-	size_t			idx;
-	unsigned char	value;
-	unsigned char	*ptr;
+	t_list *l = ((void *)0);
+	t_list *expected;
+	t_list *actual;
 
-	idx = 0;
-	value = c;
-	ptr = (unsigned char *)b;
-	while (idx < len)
-	{
-		ptr[idx] = value;
-		idx++;
-	}
-	return (b);
+	expected = ((void *)0);
+	actual = ft_lstlast(l);
 }

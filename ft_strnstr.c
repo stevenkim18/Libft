@@ -24,14 +24,10 @@ char	*ft_strnstr(const char *haystack, const char *neddle, size_t len)
 	while (haystack[idx] && idx < len)
 	{
 		n_idx = 0;
-		if (haystack[idx] == neddle[n_idx++])
+		if (haystack[idx] == neddle[n_idx])
 		{
-			idx_tmp = idx + 1;
-			while (haystack[idx_tmp] == neddle[n_idx])
-			{
-				idx_tmp++;
-				n_idx++;
-			}
+			idx_tmp = idx;
+			while (haystack[idx_tmp++] == neddle[n_idx++])
 			if (idx_tmp <= len && n_idx == ft_strlen(neddle))
 				return ((char*)haystack + idx);
 		}

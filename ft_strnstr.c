@@ -6,7 +6,7 @@
 /*   By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/03 15:49:15 by seunkim           #+#    #+#             */
-/*   Updated: 2020/03/03 17:18:43 by seunkim          ###   ########.fr       */
+/*   Updated: 2020/04/04 17:45:05 by seunkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,9 @@ char	*ft_strnstr(const char *haystack, const char *neddle, size_t len)
 		if (haystack[idx] == neddle[n_idx])
 		{
 			idx_tmp = idx;
-			while (haystack[idx_tmp++] == neddle[n_idx])
-				n_idx++;
-			if (idx_tmp <= len && n_idx == ft_strlen(neddle))
-				return ((char*)haystack + idx);
+			while (haystack[idx_tmp++] == neddle[n_idx++])
+				if (idx_tmp <= len && n_idx == ft_strlen(neddle))
+					return ((char*)haystack + idx);
 		}
 		idx++;
 	}

@@ -18,6 +18,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	size;
 	size_t	idx;
 
+	if (!s)
+		return (NULL);
 	if (ft_strlen(s) > start)
 	{
 		if (ft_strlen(s) >= start + len)
@@ -26,16 +28,13 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 			size = ft_strlen(s) - start;
 	}
 	else
-		size = 0;
+		return ("");
 	if (!(substr = (char*)malloc(sizeof(char) * (size + 1))))
 		return (NULL);
 	s += start;
-	idx = 0;
-	while (s[idx] && idx < len)
-	{
+	idx = -1;
+	while (s[++idx] && idx < len)
 		substr[idx] = s[idx];
-		idx++;
-	}
 	substr[idx] = '\0';
 	return (substr);
 }

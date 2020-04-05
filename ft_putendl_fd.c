@@ -17,6 +17,8 @@ void	ft_putendl_fd(char *s, int fd)
 	size_t	idx;
 
 	idx = 0;
+	if (!s)
+		return ;
 	while (s[idx])
 	{
 		write(fd, &s[idx], 1);

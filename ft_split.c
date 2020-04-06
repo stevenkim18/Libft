@@ -18,6 +18,8 @@ static	int		ft_wordcount(char const *s, char c)
 	int		idx;
 	int		count;
 
+	if (!ft_strlen(s))
+		return (1);
 	idx = 0;
 	while (s[idx] && s[idx] == c)
 		idx++;

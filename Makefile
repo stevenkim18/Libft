@@ -64,10 +64,16 @@ OBJS	=	$(SRCS:%.c=%.o)
 
 BOBJS	=	$(BSRCS:%.c=%.o)
 
+ifdef WITH_BONUS
+	OBJ_FILES = $(OBJS) $(BOBJS)
+else
+	OBJ_FILES = $(OBJS)
+endif
+
 all	:	$(NAME)
 
-$(NAME)	:	$(OBJS)
-	ar rc $(NAME) $(OBJS)
+$(NAME)	:	$(OBJ_FILES)
+	ar rc $(NAME) $(OBJ_FILES)
 
 $(OBJS)	:	$(SRCS)
 	$(CC) $(FLAGS) -c $(SRCS)
@@ -75,8 +81,8 @@ $(OBJS)	:	$(SRCS)
 $(BOBJS):	$(BSRCS)
 	$(CC) $(FLAGS) -c $(BSRCS)
 
-bonus	:	$(BOBJS) $(OBJS)
-	ar rc $(NAME) $(OBJS) $(BOBJS)
+bonus	:	
+	make WITH_BONUS=1 all
 
 clean	:	
 	rm -rf *.o
@@ -86,3 +92,4 @@ fclean	:	clean
 
 re	:	fclean all
 
+.PHONY: all bonus clean fclean re

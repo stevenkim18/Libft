@@ -6,7 +6,7 @@
 #    By: seunkim <seunkim@student.42seoul.kr>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/03/05 01:12:41 by seunkim           #+#    #+#              #
-#    Updated: 2020/03/08 04:30:18 by seunkim          ###   ########.fr        #
+#    Updated: 2020/04/07 02:41:57 by seunkim          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,8 +45,9 @@ SRCS	=	ft_memset.c \
 		ft_putchar_fd.c \
 		ft_putstr_fd.c \
 		ft_putendl_fd.c \
-		ft_putnbr_fd.c \
-		ft_lstnew.c \
+		ft_putnbr_fd.c 
+
+BSRCS	=	ft_lstnew.c \
 		ft_lstadd_front.c \
 		ft_lstsize.c \
 		ft_lstlast.c \
@@ -61,6 +62,8 @@ FLAGS	=	-Wall -Werror -Wextra
 
 OBJS	=	$(SRCS:%.c=%.o)
 
+BOBJS	=	$(BSRCS:%.c=%.o)
+
 all	:	$(NAME)
 
 $(NAME)	:	$(OBJS)
@@ -69,8 +72,14 @@ $(NAME)	:	$(OBJS)
 $(OBJS)	:	$(SRCS)
 	$(CC) $(FLAGS) -c $(SRCS)
 
+$(BOBJS):	$(BSRCS)
+	$(CC) $(FLAGS) -c $(BSRCS)
+
+bonus	:	$(BOBJS) $(OBJS)
+	ar rc $(NAME) $(OBJS) $(BOBJS)
+
 clean	:	
-	rm -rf $(OBJS)
+	rm -rf *.o
 
 fclean	:	clean
 	rm -rf $(NAME)
